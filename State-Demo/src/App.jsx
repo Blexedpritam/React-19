@@ -1,4 +1,5 @@
 import './App.css'
+import { CounterWithInit } from './CounterWithInit'
 // import { BatchingCounter } from './BatchingCounter'
 // import { Counter } from './Counter'
 // import { CounterWithReducer } from './CounterWithReducer'
@@ -11,7 +12,7 @@ import './App.css'
 // import { UserDashBoard } from './UserDashBoard'
 // import { UserProfile } from './UserPorfile'
 
-import { ShoppingCartWithReducer } from './ShoppingCartWithReducer'
+// import { ShoppingCartWithReducer } from './ShoppingCartWithReducer'
 function App() {
   
 
@@ -29,7 +30,8 @@ function App() {
       {/* <TodoList/> */}
       {/* <ShoppingCard/> */}
       {/* <CounterWithReducer/> */}
-      <ShoppingCartWithReducer/>
+      {/* <ShoppingCartWithReducer/> */}
+      <CounterWithInit/>
     </>
   )
 }
