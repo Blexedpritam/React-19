@@ -1,5 +1,6 @@
 import './App.css'
-import { CounterWithInit } from './CounterWithInit'
+// import { CounterWithInit } from './CounterWithInit'
+import { CoustomCounter } from './CoustomCounter'
 // import { BatchingCounter } from './BatchingCounter'
 // import { Counter } from './Counter'
 // import { CounterWithReducer } from './CounterWithReducer'
@@ -31,7 +32,8 @@ function App() {
       {/* <ShoppingCard/> */}
       {/* <CounterWithReducer/> */}
       {/* <ShoppingCartWithReducer/> */}
-      <CounterWithInit/>
+      {/* <CounterWithInit/> */}
+      <CoustomCounter/>
     </>
   )
 }
