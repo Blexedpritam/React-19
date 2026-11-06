@@ -1,8 +1,12 @@
-import { useContext } from "react";
+import { use } from "react";
 import { UserContext } from "./UserContext";
 
-export const Avatar = () => {
-  const {user , setUser } = useContext(UserContext);
+export const Avatar = (isLoading = true) => {
+  if(isLoading){
+    return <div>Loading User Data...</div>
+  }
+
+  const {user , setUser } = use(UserContext);
 
   const toggleTheme = () => {
     setUser({
