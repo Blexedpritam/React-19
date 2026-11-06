@@ -1,23 +1,16 @@
 
 import './App.css';
 import { Header} from './Header';
-import { UserContext } from './UserContext';
+import { UserContextProvider } from './UserContextProvider';
 
 function App() {
-  
-  const user = {
-    name: "Pritam Kumar",
-    role: "Admin",
-    theme:"dark",
-  };
-
   return (
-      <UserContext value={user}>
+      <UserContextProvider>
         <div>
           <h1>Dashboard</h1>
           <Header/>
          </div>
-      </UserContext>
+      </UserContextProvider>
   );
 }
 
